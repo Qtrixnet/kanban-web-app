@@ -7,6 +7,10 @@
   background-size: contain;
 }
 
+.iconLight {
+  background-image: url("../../assets/images/logo-light.svg");
+}
+
 @media screen and (max-width: 768px) {
   .icon {
     background-image: url("../../assets/images/logo-small.svg");

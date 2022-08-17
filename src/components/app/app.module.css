@@ -1,5 +1,19 @@
+.themeLight {
+  --text: #000112;
+  --background: #F4F7FD;
+  --accent-background: #FFFFFF;
+  --lines: #E4EBFA;
+}
+
+.themeDark {
+  --text: #FFFFFF;
+  --background: #20212C;
+  --accent-background: #2B2C37;
+  --lines: #3E3F4E;
+}
+
 .container {
   font-family: 'Plus Jakarta Sans', sans-serif;
   line-height: 1.2;
-  color: var(--black);
+  color: var(--text);
 }
