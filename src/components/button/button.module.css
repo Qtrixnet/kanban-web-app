@@ -1,0 +1,20 @@
+.button {
+  background-color: var(--primary);
+  color: var(--filler-light);
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 24px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  transition: background-color .2s ease, transform .2s ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--primary-hover);
+}
+
+.button:active {
+  transform: scale(0.95);
+}

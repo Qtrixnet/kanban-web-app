@@ -1,0 +1,16 @@
+.icon {
+  width: 152px;
+  height: 26px;
+  background-image: url("../../assets/images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .icon {
+    background-image: url("../../assets/images/logo-small.svg");
+    width: 26px;
+    height: 26px;
+  }
+}
