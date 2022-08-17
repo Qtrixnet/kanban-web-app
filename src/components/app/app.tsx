@@ -4,6 +4,7 @@ import {useAppSelector} from "../../services/hooks/useAppSelector";
 import {useEffect} from "react";
 import {useAppDispatch} from "../../services/hooks/useAppDispatch";
 import {setIsThemeDark} from "../../services/actions/theme";
+import SidebarIcon from "../sidebar-icon/sidebar-icon";
 
 function App() {
   const dispatch = useAppDispatch();
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className={`${styles.container} ${isThemeDark ? styles.themeDark : styles.themeLight}`}>
       <Header />
+      <SidebarIcon/>
     </div>
   );
 }

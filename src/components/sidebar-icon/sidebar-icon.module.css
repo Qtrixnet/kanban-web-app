@@ -1,0 +1,23 @@
+.icon {
+  width: 56px;
+  height: 48px;
+  background-color: var(--primary);
+  position: fixed;
+  left: 0;
+  bottom: 32px;
+  border-radius: 0 50% 50% 0;
+  transition: background-color .2s ease, opacity .2s ease;
+  background-image: url("../../assets/images/eye.svg");
+  background-position: 40% center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+
+.icon:hover {
+  background-color: var(--primary-hover);
+  cursor: pointer;
+}
+
+.icon:active {
+  opacity: .8;
+}
