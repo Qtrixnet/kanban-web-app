@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: var(--filler-light);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 24px;
+  border-left: 1px solid var(--light-gray);
+}
+
+.logoWrapper {
+  margin: 0 24px;
+  line-height: 0;
+}
+
+.options {
+  width: 24px;
+  height: 24px;
+  margin-left: 24px;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../../assets/images/options.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.options:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.options:active {
+  transform: scale(0.9);
+}
+
+.addButton {
+  background-color: var(--primary);
+  color: var(--filler-light);
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 24px;
+  transition: background-color .2s ease, transform .2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addButton:hover {
+  cursor: pointer;
+  background-color: var(--primary-hover);
+}
+
+.addButton:active {
+  transform: scale(0.95);
+}
+
+.addButtonText {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.menuButton {
+  border: 0;
+  background-color: transparent;
+  margin-left: 8px;
+  width: 10px;
+  height: 8px;
+  background-image: url("../../assets/images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform .2s ease;
+}
+
+.menuButton:active {
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 1140px) {
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .options {
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+  }
+
+  .addButton {
+    padding: 10px 18px;
+    border-radius: 24px;
+    line-height: 0;
+  }
+
+  .container {
+    border-left: none;
+    padding: 16px;
+  }
+
+  .logoWrapper {
+    margin: 0 0 0 16px;
+  }
+
+  .addButtonText {
+    width: 12px;
+    height: 12px;
+    line-height: 0.6;
+  }
+}
