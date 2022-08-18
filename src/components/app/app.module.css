@@ -16,4 +16,26 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   line-height: 1.2;
   color: var(--text);
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  align-items: flex-start;
+  background-color: var(--background);
+  transition: background-color .2s ease, color .2s ease;
+}
+
+.grid {
+  grid-template-columns: 300px 1fr;
+}
+
+@media screen and (max-width: 1140px) {
+  .grid {
+    grid-template-columns: 260px 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
