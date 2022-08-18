@@ -17,8 +17,13 @@
   line-height: 1.2;
   color: var(--text);
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 1fr;
   min-height: 100vh;
   align-items: flex-start;
   background-color: var(--background);
+  transition: background-color .2s ease, color .2s ease;
+}
+
+.grid {
+  grid-template-columns: 300px 1fr;
 }

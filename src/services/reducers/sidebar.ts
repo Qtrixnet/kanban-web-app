@@ -5,7 +5,7 @@ interface ISidebar {
 }
 
 const initialState: ISidebar = {
-  isSidebarShow: false,
+  isSidebarShow: true,
 };
 
 export const sidebarSlice = createSlice({

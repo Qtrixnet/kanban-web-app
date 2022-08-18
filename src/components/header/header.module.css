@@ -3,6 +3,7 @@
   align-items: center;
   background-color: var(--accent-background);
   border-bottom: 1px solid var(--lines);
+  transition: background-color .2s ease, border .2s ease, color .2s ease;
 }
 
 .wrapper {
@@ -22,11 +23,16 @@
   justify-content: space-between;
   width: 100%;
   padding: 20px 24px;
+  border-left: 1px solid transparent;
+}
+
+.border {
   border-left: 1px solid var(--lines);
+  transition: border .2s ease;
 }
 
 .logoWrapper {
-  margin: 0 24px;
+  padding: 32px 32px 36px;
   line-height: 0;
 }
 

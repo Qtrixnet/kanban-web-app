@@ -1,2 +1,4 @@
-// @ts-ignore
-export const setIsThemeDark = (theme: boolean) => dispatch => dispatch(setIsThemeDark(theme));
+import { Dispatch } from 'redux';
+import {setIsThemeDarkAction} from "../reducers/theme";
+
+export const setIsThemeDark = (status: boolean) => (dispatch: Dispatch) => dispatch(setIsThemeDarkAction(status));

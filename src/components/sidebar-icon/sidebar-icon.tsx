@@ -1,8 +1,15 @@
 import styles from './sidebar-icon.module.css';
+import {useAppDispatch} from "../../services/hooks/useAppDispatch";
+import {setIsSidebarShow} from "../../services/actions/sidebar";
+import {FC} from "react";
 
-const SidebarIcon = () => {
+const SidebarIcon: FC = () => {
+  const dispatch = useAppDispatch();
+
+  const handleShowSidebar = () => dispatch(setIsSidebarShow(true));
+
   return (
-    <div className={styles.icon}/>
+    <button onClick={handleShowSidebar} className={styles.icon}/>
   );
 };
 

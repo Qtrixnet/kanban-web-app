@@ -25,13 +25,13 @@ const Header: FC = () => {
   return (
     <header className={styles.header}>
       {
-        isSidebarShow && (
+        !isSidebarShow && (
           <div className={styles.logoWrapper}>
             <Logo/>
           </div>
         )
       }
-      <div className={styles.container}>
+      <div className={`${styles.container} ${!isSidebarShow ? styles.border : ''}`}>
         <div className={styles.wrapper}>
           <h1 className={styles.title}>Platform Launch</h1>
           {isMobile && <button className={styles.menuButton}/>}
