@@ -1,6 +1,4 @@
 .button {
-  background-color: var(--primary);
-  color: var(--filler-light);
   padding: 16px 24px;
   border: 0;
   border-radius: 24px;
@@ -8,6 +6,8 @@
   font-weight: 700;
   font-size: 16px;
   transition: background-color .2s ease, transform .2s ease;
+  background-color: var(--primary);
+  color: var(--filler-light);
 }
 
 .button:hover {
@@ -17,4 +17,22 @@
 
 .button:active {
   transform: scale(0.95);
+}
+
+.destructive {
+  background-color: var(--destructive);
+  color: var(--filler-light);
+}
+
+.destructive:hover {
+  background-color: var(--destructive-hover);
+}
+
+.secondary {
+  background-color: rgba(99, 95, 199, 0.1);
+  color: var(--primary);
+}
+
+.secondary:hover {
+  background-color: rgba(99, 95, 199, 0.25);
 }

@@ -3,12 +3,12 @@ import {FC, ReactNode, ReactElement} from 'react';
 
 interface IButton {
   children: ReactNode | ReactElement,
-  type: string
+  type?: string
 }
 
 const Button: FC<IButton> = ({children, type}) => {
   return (
-    <button className={styles.button}>
+    <button className={`${styles.button} ${type && styles[type]}`}>
       {children}
     </button>
   );
