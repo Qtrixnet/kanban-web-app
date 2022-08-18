@@ -15,25 +15,19 @@
 }
 
 .listItem:hover {
-  opacity: .8;
-}
-
-.listItem:active {
   color: var(--primary);
+  background-color: var(--nav-hover);
 }
 
 .listItemActive {
   background-color: var(--primary);
-  color: white;
+  color: var(--filler-light);
   transition: opacity .2s ease;
 }
 
 .listItemActive:hover {
-  opacity: 1;
-}
-
-.listItemActive:active {
-  color: white;
+  color: var(--filler-light);
+  background-color: var(--primary);
 }
 
 @media screen and (max-width: 768px) {

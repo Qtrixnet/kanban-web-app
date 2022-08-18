@@ -3,6 +3,7 @@
   --background: #F4F7FD;
   --accent-background: #FFFFFF;
   --lines: #E4EBFA;
+  --nav-hover: #F0EFFA;
 }
 
 .themeDark {
@@ -10,6 +11,7 @@
   --background: #20212C;
   --accent-background: #2B2C37;
   --lines: #3E3F4E;
+  --nav-hover: #FFFFFF;
 }
 
 .container {
