@@ -2,6 +2,7 @@ import styles from './sidebar.module.css';
 import Logo from "../logo/logo";
 import Navigation from "../navigation/navigation";
 import {FC} from "react";
+import ThemeSwitcher from "../theme-switcher/theme-switcher";
 
 const Sidebar: FC = () => {
   return (
@@ -11,12 +12,7 @@ const Sidebar: FC = () => {
       </div>
       <div className={styles.container}>
         <Navigation/>
-        <div>
-          <div>
-            переключатель темы
-          </div>
-          <button>Hide Sidebar</button>
-        </div>
+        <ThemeSwitcher/>
       </div>
     </div>
   );

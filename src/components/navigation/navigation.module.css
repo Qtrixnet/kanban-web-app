@@ -32,3 +32,7 @@
   cursor: pointer;
   opacity: 0.8;
 }
+
+.addButton:active {
+  opacity: 0.6;
+}
