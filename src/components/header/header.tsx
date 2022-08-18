@@ -6,6 +6,7 @@ import {useAppSelector} from "../../services/hooks/useAppSelector";
 const Header: FC = () => {
   const [isMobile, setIsMobile] = useState(false);
   const isSidebarShow = useAppSelector(state => state.sidebar.isSidebarShow);
+  const currentBoard = useAppSelector(state => state.boards.currentBoard);
 
   const checkWindowSize = useCallback(() => {
     if (window.innerWidth <= 768) {
@@ -33,7 +34,7 @@ const Header: FC = () => {
       }
       <div className={`${styles.container} ${!isSidebarShow ? styles.border : ''}`}>
         <div className={styles.wrapper}>
-          <h1 className={styles.title}>Platform Launch</h1>
+          <h1 className={styles.title}>{currentBoard.title}</h1>
           {isMobile && <button className={styles.menuButton}/>}
         </div>
         <div className={styles.wrapper}>

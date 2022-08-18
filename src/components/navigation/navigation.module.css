@@ -23,18 +23,19 @@
   font-weight: 700;
   font-size: 15px;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  transition: opacity .2s ease;
+  transition: opacity .2s ease, background-color .2s ease;
   border: 0;
   color: var(--primary);
+  border-radius: 0 100px 100px 0;
 }
 
 .addButton:hover {
   cursor: pointer;
-  opacity: 0.8;
+  background-color: var(--nav-hover);
 }
 
 .addButton:active {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 1140px) {
