@@ -2,7 +2,7 @@ import {v4 as uuidv4} from 'uuid';
 
 const initialData = [
   {
-    title: 'Kanban',
+    title: 'Kanban 1',
     slug: 'kanban',
     id: uuidv4(),
     columns: [
@@ -127,7 +127,7 @@ const initialData = [
     ]
   },
   {
-    title: 'Kanban',
+    title: 'Kanban 2',
     slug: '/',
     id: uuidv4(),
     columns: [
