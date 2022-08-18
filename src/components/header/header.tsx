@@ -1,10 +1,11 @@
 import styles from './header.module.css';
 import Logo from "../logo/logo";
 import {FC, useCallback, useEffect, useState} from "react";
+import {useAppSelector} from "../../services/hooks/useAppSelector";
 
 const Header: FC = () => {
-  const [isNavHide, setIsNavHide] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const isSidebarShow = useAppSelector(state => state.sidebar.isSidebarShow);
 
   const checkWindowSize = useCallback(() => {
     if (window.innerWidth <= 768) {
@@ -24,7 +25,7 @@ const Header: FC = () => {
   return (
     <header className={styles.header}>
       {
-        isNavHide && (
+        isSidebarShow && (
           <div className={styles.logoWrapper}>
             <Logo/>
           </div>

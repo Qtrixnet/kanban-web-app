@@ -1,0 +1,29 @@
+.link {
+  text-decoration: none;
+  transition: opacity .2s ease;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.link:active {
+  color: var(--primary);
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 32px;
+  border-radius: 0 100px 100px 0;
+  transition: background-color .2s ease, color .2s ease;
+  color: var(--gray);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.listItemActive {
+  background-color: var(--primary);
+  color: white;
+}
