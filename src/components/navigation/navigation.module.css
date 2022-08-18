@@ -9,7 +9,7 @@
 
 .list {
   padding-top: 20px;
-  width: 90%;
+  width: 276px;
   list-style: none;
 }
 
@@ -35,4 +35,14 @@
 
 .addButton:active {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 1140px) {
+  .addButton {
+    gap: 12px;
+  }
+
+  .list {
+    width: 240px;
+  }
 }

@@ -116,3 +116,9 @@
 .input:checked + .slider:before {
   transform: translateX(20px);
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 47px 12px;
+  }
+}

@@ -35,3 +35,9 @@
 .listItemActive:active {
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .listItem {
+    gap: 12px;
+  }
+}

@@ -27,3 +27,15 @@
 .grid {
   grid-template-columns: 300px 1fr;
 }
+
+@media screen and (max-width: 1140px) {
+  .grid {
+    grid-template-columns: 260px 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
