@@ -1,0 +1,25 @@
+.container {
+  min-width: 280px;
+  background: var(--add-board-button);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-top: 39px;
+}
+
+.button {
+  color: var(--gray);
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 24px;
+  transition: color .2s ease;
+  padding: 12px;
+  background-color: transparent;
+  border: 0;
+}
+
+.button:hover {
+  color: var(--primary);
+  cursor: pointer;
+}

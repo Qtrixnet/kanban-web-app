@@ -1,0 +1,21 @@
+.task {
+  background-color: var(--accent-background);
+  padding: 24px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(54, 78, 126, 0.101545);
+  transition: background-color .2s ease, color .2s ease;
+  width: 280px;
+  min-width: 280px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gray);
+}

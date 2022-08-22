@@ -4,6 +4,7 @@
   --accent-background: #FFFFFF;
   --lines: #E4EBFA;
   --nav-hover: #F0EFFA;
+  --add-board-button: linear-gradient(180deg, #E9EFFA 0%, rgba(233, 239, 250, 0.5) 100%);
 }
 
 .themeDark {
@@ -12,6 +13,7 @@
   --accent-background: #2B2C37;
   --lines: #3E3F4E;
   --nav-hover: #FFFFFF;
+  --add-board-button: linear-gradient(180deg, rgba(43, 44, 55, 0.25) 0%, rgba(43, 44, 55, 0.125) 100%);
 }
 
 .container {
@@ -22,8 +24,6 @@
   grid-template-columns: 1fr;
   min-height: 100vh;
   align-items: flex-start;
-  background-color: var(--background);
-  transition: background-color .2s ease, color .2s ease;
 }
 
 .grid {

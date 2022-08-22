@@ -9,14 +9,14 @@ const Navigation: FC = () => {
 
   return (
     <nav>
-      <h2 className={styles.title}>All boards ({boards.length})</h2>
+      <h2 className={styles.title}>All boards ({boards?.length ? boards.length : 0})</h2>
       <ul className={styles.list}>
         {
-          boards.length > 0 && (
+          boards?.length > 0 && (
             <>
               {
                 boards.map((board: any) => (
-                  <NavigationLink path={board.slug} text={board.title}/>
+                  <NavigationLink key={board.id} path={board.id} text={board.title}/>
                 ))
               }
             </>
