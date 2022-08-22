@@ -20,7 +20,7 @@ const Column: FC<IColumn> = ({title, tasks, color}) => {
         tasks.length > 0 && (
           <ul className={styles.list}>
             {
-              tasks.map((task: any) => <Task key={task.id} title={task.title} subtasks={task.subtasks} />)
+              tasks.map((task: ITask) => <Task key={task.id} title={task.title} subtasks={task.subtasks}/>)
             }
           </ul>
         )

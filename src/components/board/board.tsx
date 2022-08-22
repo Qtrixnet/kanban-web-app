@@ -13,12 +13,15 @@ const Board: FC = () => {
 
   const findCurrentBoard = useCallback(() => boards.find((board: IBoard) => board.id === id), [id]);
 
-  useEffect(() => setCurrentBoard(findCurrentBoard()), [id])
+  useEffect(() => {
+    console.log(currentBoard)
+    setCurrentBoard(findCurrentBoard())
+  }, [id])
 
   return (
     <div className={styles.board}>
       {
-        currentBoard?.columns && currentBoard.columns.map(board => (
+        currentBoard && currentBoard.columns.map(board => (
           <Column
             key={board.id}
             title={board.title}
