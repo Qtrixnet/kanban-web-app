@@ -2,13 +2,13 @@ import {v4 as uuidv4} from 'uuid';
 
 const initialData = [
   {
-    title: 'Kanban',
-    slug: 'kanban',
+    title: 'Popups',
     id: uuidv4(),
     columns: [
       {
         title: 'todo',
         id: uuidv4(),
+        color: '#49C4E5',
         tasks: [
           {
             title: 'create popups',
@@ -52,6 +52,7 @@ const initialData = [
       {
         title: 'doing',
         id: uuidv4(),
+        color: '#8471F2',
         tasks: [
           {
             title: 'create mocks',
@@ -80,6 +81,7 @@ const initialData = [
       {
         title: 'done',
         id: uuidv4(),
+        color: '#67E2AE',
         statuses: ['todo', 'doing', 'done'],
         currentStatus: 'done',
         tasks: [
@@ -127,12 +129,12 @@ const initialData = [
     ]
   },
   {
-    title: 'Kanban',
-    slug: '/',
+    title: 'Kanban web app',
     id: uuidv4(),
     columns: [
       {
         title: 'todo',
+        color: '#49C4E5',
         id: uuidv4(),
         tasks: [
           {
@@ -177,6 +179,7 @@ const initialData = [
       {
         title: 'doing',
         id: uuidv4(),
+        color: '#8471F2',
         tasks: [
           {
             title: 'create mocks',
@@ -205,7 +208,7 @@ const initialData = [
       {
         title: 'done',
         id: uuidv4(),
-        statuses: ['todo', 'doing', 'done'],
+        color: '#67E2AE',
         currentStatus: 'done',
         tasks: [
           {
@@ -246,7 +249,120 @@ const initialData = [
                 done: true,
               },
             ]
-          }
+          },
+          {
+            title: 'create sidebar',
+            description: 'create sidebar with navigation panel and theme switcher',
+            id: uuidv4(),
+            subtasks: [
+              {
+                id: uuidv4(),
+                title: 'create navigation',
+                done: true,
+              },
+              {
+                id: uuidv4(),
+                title: 'create theme switcher',
+                done: true,
+              },
+            ]
+          }, {
+            title: 'create sidebar',
+            description: 'create sidebar with navigation panel and theme switcher',
+            id: uuidv4(),
+            subtasks: [
+              {
+                id: uuidv4(),
+                title: 'create navigation',
+                done: true,
+              },
+              {
+                id: uuidv4(),
+                title: 'create theme switcher',
+                done: true,
+              },
+            ]
+          }, {
+            title: 'create sidebar',
+            description: 'create sidebar with navigation panel and theme switcher',
+            id: uuidv4(),
+            subtasks: [
+              {
+                id: uuidv4(),
+                title: 'create navigation',
+                done: true,
+              },
+              {
+                id: uuidv4(),
+                title: 'create theme switcher',
+                done: true,
+              },
+            ]
+          }, {
+            title: 'create sidebar',
+            description: 'create sidebar with navigation panel and theme switcher',
+            id: uuidv4(),
+            subtasks: [
+              {
+                id: uuidv4(),
+                title: 'create navigation',
+                done: true,
+              },
+              {
+                id: uuidv4(),
+                title: 'create theme switcher',
+                done: true,
+              },
+            ]
+          }, {
+            title: 'create sidebar',
+            description: 'create sidebar with navigation panel and theme switcher',
+            id: uuidv4(),
+            subtasks: [
+              {
+                id: uuidv4(),
+                title: 'create navigation',
+                done: true,
+              },
+              {
+                id: uuidv4(),
+                title: 'create theme switcher',
+                done: true,
+              },
+            ]
+          }, {
+            title: 'create sidebar',
+            description: 'create sidebar with navigation panel and theme switcher',
+            id: uuidv4(),
+            subtasks: [
+              {
+                id: uuidv4(),
+                title: 'create navigation',
+                done: true,
+              },
+              {
+                id: uuidv4(),
+                title: 'create theme switcher',
+                done: true,
+              },
+            ]
+          }, {
+            title: 'create sidebar',
+            description: 'create sidebar with navigation panel and theme switcher',
+            id: uuidv4(),
+            subtasks: [
+              {
+                id: uuidv4(),
+                title: 'create navigation',
+                done: true,
+              },
+              {
+                id: uuidv4(),
+                title: 'create theme switcher',
+                done: true,
+              },
+            ]
+          },
         ]
       }
     ]

@@ -1,0 +1,23 @@
+.button {
+  margin-top: 39px;
+  border-radius: 6px;
+  background: var(--add-board-button);
+  min-width: 280px;
+  color: var(--gray);
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 24px;
+  padding: 12px;
+  background-color: transparent;
+  border: 0;
+  transition: color .2s ease, transform .2s ease;
+}
+
+.button:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
