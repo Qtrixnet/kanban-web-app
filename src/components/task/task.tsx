@@ -1,19 +1,16 @@
 import styles from './task.module.css';
 import {FC, useCallback, useEffect, useState} from "react";
-
-interface ITask {
-  title: string,
-  subtasks: any,
-}
+import {ISubtask, ITask} from "../../services/types/types";
 
 const Task: FC<ITask> = ({title, subtasks}) => {
-  const [completedTasks, setCompletedTasks] = useState([]);
+  const [completedTasks, setCompletedTasks] = useState<ISubtask[]>([]);
 
-  const foundCompletedTasks = useCallback(() => subtasks.filter((subtask: any) => subtask.done), [])
+  const foundCompletedTasks = useCallback(() => subtasks.filter((subtask: ISubtask) => subtask.done), [])
 
   useEffect(() => {
     setCompletedTasks(foundCompletedTasks())
   }, [])
+
   return (
     <li className={styles.task}>
       <h4 className={styles.title}>{title}</h4>

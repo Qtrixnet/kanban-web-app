@@ -1,10 +1,11 @@
 import styles from './column.module.css';
 import {FC} from "react";
 import Task from "../task/task";
+import {ITask} from "../../services/types/types";
 
 interface IColumn {
   title: string,
-  tasks: any,
+  tasks: ITask[],
   color: string,
 }
 

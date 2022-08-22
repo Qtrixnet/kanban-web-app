@@ -3,11 +3,12 @@ import Logo from "../logo/logo";
 import {FC, useCallback, useEffect, useState} from "react";
 import {useAppSelector} from "../../services/hooks/useAppSelector";
 import {useParams} from "react-router-dom";
+import {IBoard} from "../../services/types/types";
 
 const Header: FC = () => {
   const {id} = useParams();
-  const [isMobile, setIsMobile] = useState(false);
-  const [currentBoard, setCurrentBoard] = useState({title: ''});
+  const [isMobile, setIsMobile] = useState<Boolean>(false);
+  const [currentBoard, setCurrentBoard] = useState<IBoard | null>(null);
   const boards = useAppSelector(state => state.boards.data);
   const isSidebarShow = useAppSelector(state => state.sidebar.isSidebarShow);
 
@@ -19,7 +20,7 @@ const Header: FC = () => {
     }
   }, [])
 
-  const findCurrentBoard = useCallback(() => boards?.find((board: any) => board.id === id), [id]);
+  const findCurrentBoard = useCallback(() => boards?.find((board: IBoard) => board.id === id), [id]);
 
   useEffect(() => {
     checkWindowSize();

@@ -3,6 +3,7 @@ import BoardIcon from "../board-icon/board-icon";
 import NavigationLink from "../navigation-link/navigation-link";
 import {FC} from "react";
 import {useAppSelector} from "../../services/hooks/useAppSelector";
+import {IBoard} from "../../services/types/types";
 
 const Navigation: FC = () => {
   const boards = useAppSelector(state => state.boards.data);
@@ -15,7 +16,7 @@ const Navigation: FC = () => {
           boards?.length > 0 && (
             <>
               {
-                boards.map((board: any) => (
+                boards.map((board: IBoard) => (
                   <NavigationLink key={board.id} path={board.id} text={board.title}/>
                 ))
               }
